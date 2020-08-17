@@ -1,0 +1,92 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background: #2d2013;
+  color: #fff;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  margin: 0;
+}
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 0;
+  text-align: center;
+  width: 1000px;
+  max-width: 90vw;
+  padding: 0px 10px;
+  margin: 0 auto;
+}
+.container h1 {
+  margin: 10px 0;
+}
+.container h2 {
+  margin: 10px 0;
+}
+.flex {
+  display: flex;
+}
+
+input,
+button {
+  border: 1px solid #dedede;
+  font-size: 14px;
+  padding: 8px 10px;
+}
+
+input[type="text"] {
+  width: 300px;
+  max-width: 60vw;
+  border-radius: 4px 0 0 0;
+}
+
+.search-btn {
+  cursor: pointer;
+  border-left: 0;
+  border-radius: 0;
+  border-radius: 0px 4px 4px 0;
+  margin-right: 10px;
+}
+
+.random-btn {
+  border-radius: 4px;
+}
+
+.meal {
+  position: relative;
+}
+
+.meal img {
+  width: 100%;
+  max-width: 400px;
+  border: 3px solid #fff;
+}
+
+.meal-info {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background: rgba(0, 0, 0, 0.7);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: opacity 0.3s ease-in;
+  opacity: 0;
+}
+
+.meal-info:hover {
+  opacity: 1;
+}
+
+.meal h3 {
+  cursor: pointer;
+  margin-bottom: 20px;
+  border-top: 10px;
+}
